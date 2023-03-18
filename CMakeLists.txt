@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(mini_mario CXX C ASM)
+project(exlaunch_proj CXX C ASM)
 
 if (NOT SWITCH)
   message(FATAL_ERROR "Not targeting switch, make sure to specify -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain.cmake")
