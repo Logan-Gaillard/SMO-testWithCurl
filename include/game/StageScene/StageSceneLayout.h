@@ -1,6 +1,6 @@
 #pragma once
 
-#include "game/Layouts/CoinCounter.h"
+#include "../Layouts/CoinCounter.h"
 #include "al/layout/LayoutActor.h"
 #include "al/layout/LayoutInitInfo.h"
 #include "al/nerve/NerveStateBase.h"

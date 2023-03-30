@@ -1,7 +1,7 @@
 #pragma once
 
-#include "thread/seadAtomic.h"
-#include "thread/seadSemaphore.h"
+#include "seadAtomic.h"
+#include "seadSemaphore.h"
 
 namespace sead
 {

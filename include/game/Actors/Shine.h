@@ -1,11 +1,11 @@
 #pragma once
 
 #include "al/actor/ActorDimensionKeeper.h"
-#include "game/Info/QuestInfo.h"
+#include "../Info/QuestInfo.h"
 #include "types.h"
 
-#include "game/Info/ShineInfo.h"
-#include "game/Interfaces/IUseDimension.h"
+#include "../Info/ShineInfo.h"
+#include "../Interfaces/IUseDimension.h"
 #include "al/LiveActor/LiveActor.h"
 
 class Shine : public al::LiveActor , public IUseDimension {

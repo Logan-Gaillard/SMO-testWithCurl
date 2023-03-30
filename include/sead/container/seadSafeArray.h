@@ -1,7 +1,7 @@
 #pragma once
 
-#include <basis/seadRawPrint.h>
-#include <basis/seadTypes.h>
+#include "../basis/seadRawPrint.h"
+#include "../basis/seadTypes.h"
 #include <type_traits>
 #include <utility>
 

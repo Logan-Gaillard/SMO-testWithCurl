@@ -1,10 +1,10 @@
 #pragma once
 
-#include "sead/prim/seadSafeString.h"
-#include "sead/heap/seadHeap.h"
-#include "sead/math/seadVector.h"
-#include "sead/thread/seadThread.h"
-#include "sead/prim/seadRuntimeTypeInfo.h"
+#include "../prim/seadSafeString.h"
+#include "../heap/seadHeap.h"
+#include "../math/seadVector.h"
+#include "../thread/seadThread.h"
+#include "../prim/seadRuntimeTypeInfo.h"
 
 struct NVNcommandBuffer;
 struct NVNcommandBufferMemoryEvent;

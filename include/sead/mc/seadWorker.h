@@ -1,12 +1,12 @@
 #pragma once
 
-#include "container/seadRingBuffer.h"
-#include "mc/seadJobQueue.h"
-#include "prim/seadEnum.h"
-#include "prim/seadSafeString.h"
-#include "thread/seadEvent.h"
-#include "thread/seadThread.h"
-#include "time/seadTickTime.h"
+#include "../container/seadRingBuffer.h"
+#include "seadJobQueue.h"
+#include "../prim/seadEnum.h"
+#include "../prim/seadSafeString.h"
+#include "../thread/seadEvent.h"
+#include "../thread/seadThread.h"
+#include "../time/seadTickTime.h"
 
 namespace sead
 {

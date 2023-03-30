@@ -1,6 +1,6 @@
 #pragma once
 
-#include <math/seadMathPolicies.h>
+#include "seadMathPolicies.h"
 
 namespace sead
 {
@@ -58,5 +58,5 @@ public:
 }  // namespace sead
 
 #define SEAD_MATH_VECTOR_CALC_COMMON_H_
-#include <math/seadVectorCalcCommon.hpp>
+#include "seadVectorCalcCommon.hpp"
 #undef SEAD_MATH_VECTOR_CALC_COMMON_H_

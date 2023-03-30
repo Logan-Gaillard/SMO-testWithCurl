@@ -1,10 +1,10 @@
 #pragma once
 
-#include "basis/seadTypes.h"
-#include "container/seadFreeList.h"
-#include "container/seadTreeMap.h"
-#include "prim/seadDelegate.h"
-#include "prim/seadSafeString.h"
+#include "../basis/seadTypes.h"
+#include "seadFreeList.h"
+#include "seadTreeMap.h"
+#include "../prim/seadDelegate.h"
+#include "../prim/seadSafeString.h"
 
 namespace sead
 {

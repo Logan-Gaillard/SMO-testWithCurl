@@ -6,8 +6,8 @@
 #include <nn/os.h>
 #endif
 
-#include <basis/seadTypes.h>
-#include <heap/seadDisposer.h>
+#include "../basis/seadTypes.h"
+#include "../heap/seadDisposer.h"
 
 namespace sead
 {

@@ -2,7 +2,7 @@
 
 #include <cstdarg>
 
-#include "prim/seadSafeString.h"
+#include "seadSafeString.h"
 
 namespace sead
 {

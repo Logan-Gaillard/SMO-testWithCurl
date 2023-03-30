@@ -2,8 +2,8 @@
 #define SEAD_METHODTREEMGR_H_
 
 //#include <framework/seadMethodTree.h>
-#include <prim/seadRuntimeTypeInfo.h>
-#include <thread/seadCriticalSection.h>
+#include "../prim/seadRuntimeTypeInfo.h"
+#include "../thread/seadCriticalSection.h"
 
 namespace sead
 {

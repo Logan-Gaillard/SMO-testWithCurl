@@ -1,6 +1,6 @@
 #pragma once
 
-#include "heap/seadDisposer.h"
+#include "../heap/seadDisposer.h"
 
 namespace sead
 {

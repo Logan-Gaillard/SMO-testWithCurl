@@ -3,9 +3,9 @@
 #include <algorithm>
 #include <type_traits>
 
-#include <prim/seadMemUtil.h>
+#include "seadMemUtil.h"
 #ifndef SEAD_PRIM_SAFE_STRING_H_
-#include <prim/seadSafeString.h>
+#include "seadSafeString.h"
 #endif
 
 namespace sead

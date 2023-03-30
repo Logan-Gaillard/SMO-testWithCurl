@@ -6,7 +6,7 @@
 *  Vtable loc: 1D780C0
  */
 
-#include "game/Interfaces/IUseDimension.h"
+#include "../Interfaces/IUseDimension.h"
 #include "al/actor/ActorDimensionKeeper.h"
 #include "al/actor/ActorInitInfo.h"
 #include "PlayerActorBase.h"

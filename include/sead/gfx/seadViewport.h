@@ -1,8 +1,8 @@
 #pragma once
 
-#include <gfx/seadGraphics.h>
-#include <math/seadBoundBox.h>
-#include <math/seadVector.h>
+#include "seadGraphics.h"
+#include "../math/seadBoundBox.h"
+#include "../math/seadVector.h"
 
 namespace sead
 {

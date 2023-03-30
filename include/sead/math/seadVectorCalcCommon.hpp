@@ -4,9 +4,9 @@
 #include <cafe.h>
 #endif  // cafe
 
-#include <math/seadMathCalcCommon.h>
+#include "seadMathCalcCommon.h"
 #ifndef SEAD_MATH_VECTOR_CALC_COMMON_H_
-#include <math/seadVectorCalcCommon.h>
+#include "seadVectorCalcCommon.h"
 #endif
 
 namespace sead

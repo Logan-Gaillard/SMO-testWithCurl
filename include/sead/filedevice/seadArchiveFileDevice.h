@@ -1,6 +1,6 @@
 #pragma once
 
-#include "filedevice/seadFileDevice.h"
+#include "seadFileDevice.h"
 
 namespace sead
 {

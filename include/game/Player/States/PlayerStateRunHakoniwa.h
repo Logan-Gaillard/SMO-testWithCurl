@@ -2,7 +2,7 @@
 
 #include "al/LiveActor/LiveActor.h"
 #include "game/Interfaces/IUsePlayerCollision.h"
-#include "game/Player/Actions/PlayerActionGroundMoveControl.h"
+#include "../Actions/PlayerActionGroundMoveControl.h"
 #include "game/Player/PlayerAnimator.h"
 #include "game/Player/PlayerConst.h"
 #include "game/Player/PlayerInput.h"

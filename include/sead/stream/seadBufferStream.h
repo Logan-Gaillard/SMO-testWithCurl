@@ -1,7 +1,7 @@
 #pragma once
 
-#include "stream/seadStream.h"
-#include "stream/seadStreamSrc.h"
+#include "seadStream.h"
+#include "seadStreamSrc.h"
 
 namespace sead
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "game/GameData/GameDataHolder.h"
+#include "GameDataHolder.h"
 
 namespace SaveDataAccessFunction {
 

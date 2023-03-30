@@ -1,9 +1,9 @@
 #ifndef SEAD_CAMERA_H_
 #define SEAD_CAMERA_H_
 
-#include <math/seadMatrix.h>
-#include <math/seadVector.h>
-#include <prim/seadRuntimeTypeInfo.h>
+#include "../math/seadMatrix.h"
+#include "../math/seadVector.h"
+#include "../prim/seadRuntimeTypeInfo.h"
 
 namespace sead
 {

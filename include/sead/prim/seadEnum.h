@@ -1,11 +1,11 @@
 #pragma once
 
-#include <basis/seadRawPrint.h>
-#include <basis/seadTypes.h>
-#include <container/seadSafeArray.h>
-#include <prim/seadSafeString.h>
-#include <prim/seadScopedLock.h>
-#include <thread/seadCriticalSection.h>
+#include "../basis/seadRawPrint.h"
+#include "../basis/seadTypes.h"
+#include "../container/seadSafeArray.h"
+#include "seadSafeString.h"
+#include "seadScopedLock.h"
+#include "../thread/seadCriticalSection.h"
 
 namespace sead
 {

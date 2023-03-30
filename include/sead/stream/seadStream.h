@@ -1,8 +1,8 @@
 #pragma once
 
-#include "basis/seadTypes.h"
-#include "prim/seadEndian.h"
-#include "prim/seadSafeString.h"
+#include "../basis/seadTypes.h"
+#include "../prim/seadEndian.h"
+#include "../prim/seadSafeString.h"
 
 namespace sead
 {

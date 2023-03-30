@@ -1,16 +1,16 @@
 #pragma once
 
-#include "basis/seadTypes.h"
-#include "container/seadBuffer.h"
-#include "container/seadSafeArray.h"
-#include "framework/seadProcessMeterBar.h"
-#include "hostio/seadHostIONode.h"
-#include "mc/seadCoreInfo.h"
-#include "mc/seadJob.h"
-#include "prim/seadEnum.h"
-#include "prim/seadNamable.h"
-#include "thread/seadAtomic.h"
-#include "thread/seadEvent.h"
+#include "../basis/seadTypes.h"
+#include "../container/seadBuffer.h"
+#include "../container/seadSafeArray.h"
+#include "../framework/seadProcessMeterBar.h"
+#include "../hostio/seadHostIONode.h"
+#include "seadCoreInfo.h"
+#include "seadJob.h"
+#include "../prim/seadEnum.h"
+#include "../prim/seadNamable.h"
+#include "../thread/seadAtomic.h"
+#include "../thread/seadEvent.h"
 
 namespace sead
 {

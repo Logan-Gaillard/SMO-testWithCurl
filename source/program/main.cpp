@@ -2,13 +2,13 @@
 #include "patches.hpp"
 #include "logger/Logger.hpp"
 
-#include <basis/seadRawPrint.h>
-#include <prim/seadSafeString.h>
-#include <resource/seadResourceMgr.h>
-#include <heap/seadHeapMgr.h>
-#include <devenv/seadDebugFontMgrNvn.h>
-#include <gfx/seadTextWriter.h>
-#include <gfx/seadViewport.h>
+#include "sead/basis/seadRawPrint.h"
+#include "sead/prim/seadSafeString.h"
+#include "sead/resource/seadResourceMgr.h"
+#include "sead/heap/seadHeapMgr.h"
+#include "sead/devenv/seadDebugFontMgrNvn.h"
+#include "sead/gfx/seadTextWriter.h"
+#include "sead/gfx/seadViewport.h"
 
 #include <cmath>
 
@@ -21,7 +21,7 @@
 
 #include "al/util/SensorUtil.h"
 #include "game/Player/PlayerJointControlSwimPose.h"
-#include "gfx/seadPrimitiveRenderer.h"
+#include "sead/gfx/seadPrimitiveRenderer.h"
 
 static const char *DBG_FONT_PATH = "DebugData/Font/nvn_font_jis1.ntx";
 static const char *DBG_SHADER_PATH = "DebugData/Font/nvn_font_shader_jis1.bin";

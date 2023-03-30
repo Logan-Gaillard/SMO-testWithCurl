@@ -1,6 +1,6 @@
 #pragma once
 
-#include <prim/seadSafeString.h>
+#include "sead/prim/seadSafeString.h"
 #include "al/sensor/HitSensor.h"
 
 class IUsePlayerPuppet {

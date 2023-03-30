@@ -1,12 +1,12 @@
 #pragma once
 
 #ifndef SEAD_MATH_QUAT_CALC_COMMON_H_
-#include <math/seadQuatCalcCommon.h>
+#include "seadQuatCalcCommon.h"
 #endif
 
 #include <limits>
-#include <math/seadMathCalcCommon.h>
-#include <math/seadQuat.h>
+#include "seadMathCalcCommon.h"
+#include "seadQuat.h"
 
 namespace sead
 {

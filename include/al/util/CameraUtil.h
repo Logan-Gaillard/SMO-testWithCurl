@@ -4,7 +4,7 @@
 
 #include "al/camera/CameraDirector.h"
 #include "al/camera/Projection.h"
-#include "gfx/seadProjection.h"
+#include "sead/gfx/seadProjection.h"
 
 namespace al {
 sead::Vector3f* getCameraUp(al::IUseCamera const*, int);

@@ -1,9 +1,9 @@
 #pragma once
 
-#include <math/seadMathCalcCommon.h>
+#include "seadMathCalcCommon.h"
 
 #ifndef SEAD_MATH_BOUND_BOX_H_
-#include <math/seadBoundBox.h>
+#include "seadBoundBox.h"
 #endif
 
 namespace sead

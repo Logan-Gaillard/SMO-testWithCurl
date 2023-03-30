@@ -4,7 +4,7 @@
 #include <cstddef>
 #include <new>
 
-#include <basis/seadTypes.h>
+#include "seadTypes.h"
 
 namespace sead
 {

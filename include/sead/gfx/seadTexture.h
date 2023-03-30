@@ -1,8 +1,8 @@
 #ifndef SEAD_TEXTURE_H_
 #define SEAD_TEXTURE_H_
 
-#include <basis/seadTypes.h>
-#include <prim/seadRuntimeTypeInfo.h>
+#include "../basis/seadTypes.h"
+#include "../prim/seadRuntimeTypeInfo.h"
 
 namespace sead
 {

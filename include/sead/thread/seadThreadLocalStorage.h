@@ -4,7 +4,7 @@
 #include <nn/os.h>
 #endif
 
-#include "basis/seadTypes.h"
+#include "../basis/seadTypes.h"
 
 namespace sead
 {
@@ -29,7 +29,7 @@ private:
 
 #define SEAD_THREAD_THREAD_LOCAL_STORAGE_H_
 #ifdef NNSDK
-#include "thread/nin/seadThreadLocalStorageNin.hpp"
+#include "nin/seadThreadLocalStorageNin.hpp"
 #else
 #error "Unknown platform"
 #endif

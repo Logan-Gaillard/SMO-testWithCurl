@@ -1,12 +1,12 @@
 #pragma once
 
-#include "container/seadBuffer.h"
-#include "container/seadSafeArray.h"
-#include "gfx/seadColor.h"
-#include "heap/seadDisposer.h"
-#include "prim/seadNamable.h"
-#include "prim/seadSafeString.h"
-#include "time/seadTickTime.h"
+#include "../container/seadBuffer.h"
+#include "../container/seadSafeArray.h"
+#include "../gfx/seadColor.h"
+#include "../heap/seadDisposer.h"
+#include "../prim/seadNamable.h"
+#include "../prim/seadSafeString.h"
+#include "../time/seadTickTime.h"
 
 namespace sead
 {

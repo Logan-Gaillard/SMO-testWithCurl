@@ -1,9 +1,9 @@
 #ifndef SEAD_ENDIAN_H_
 #define SEAD_ENDIAN_H_
 
-#include <basis/seadRawPrint.h>
-#include <basis/seadTypes.h>
-#include <prim/seadBitUtil.h>
+#include "../basis/seadRawPrint.h"
+#include "../basis/seadTypes.h"
+#include "seadBitUtil.h"
 
 namespace sead
 {

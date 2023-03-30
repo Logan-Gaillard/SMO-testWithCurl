@@ -1,12 +1,12 @@
 #ifndef SEAD_RESOURCEMGR_H_
 #define SEAD_RESOURCEMGR_H_
 
-#include <basis/seadTypes.h>
-#include <container/seadTList.h>
-#include <filedevice/seadFileDevice.h>
-#include <heap/seadDisposer.h>
-#include <heap/seadHeap.h>
-#include <prim/seadSafeString.h>
+#include "../basis/seadTypes.h"
+#include "../container/seadTList.h"
+#include "../filedevice/seadFileDevice.h"
+#include "../heap/seadDisposer.h"
+#include "../heap/seadHeap.h"
+#include "../prim/seadSafeString.h"
 
 namespace sead
 {

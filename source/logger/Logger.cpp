@@ -1,7 +1,7 @@
 #include "Logger.hpp"
-#include "socket.h"
-#include "nifm.h"
-#include "util.h"
+#include "nn/socket.h"
+#include "nn/nifm.h"
+#include "nn/util.h"
 #include "lib.hpp"
 
 char socketPool[0x600000+0x20000] __attribute__((aligned(0x1000)));

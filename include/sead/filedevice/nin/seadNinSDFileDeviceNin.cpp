@@ -1,4 +1,4 @@
-#include "filedevice/nin/seadNinSDFileDeviceNin.h"
+#include "seadNinSDFileDeviceNin.h"
 #include "filedevice/seadFileDeviceMgr.h"
 #include "filedevice/seadPath.h"
 

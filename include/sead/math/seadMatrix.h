@@ -1,9 +1,9 @@
 #pragma once
 
-#include <basis/seadTypes.h>
-#include <math/seadMathPolicies.h>
-#include <math/seadQuat.h>
-#include <math/seadVector.h>
+#include "../basis/seadTypes.h"
+#include "seadMathPolicies.h"
+#include "seadQuat.h"
+#include "seadVector.h"
 
 namespace sead
 {
@@ -283,5 +283,5 @@ const Matrix44<f64> Matrix44<f64>::ident;
 }  // namespace sead
 
 #define SEAD_MATH_MATRIX_H_
-#include <math/seadMatrix.hpp>
+#include "seadMatrix.hpp"
 #undef SEAD_MATH_MATRIX_H_

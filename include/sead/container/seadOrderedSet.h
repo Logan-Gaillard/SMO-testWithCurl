@@ -1,6 +1,6 @@
 #pragma once
 
-#include "container/seadTreeMap.h"
+#include "seadTreeMap.h"
 
 namespace sead
 {

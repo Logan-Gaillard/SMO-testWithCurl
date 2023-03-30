@@ -9,8 +9,8 @@
 #include "al/sensor/HitSensor.h"
 #include "al/sensor/SensorMsg.h"
 
-#include "game/Player/PlayerInput.h"
-#include "game/Interfaces/IUsePlayerCollision.h"
+#include "PlayerInput.h"
+#include "../Interfaces/IUsePlayerCollision.h"
 
 #include "HackCapThrowParam.h"
 #include "HackCap/HackCapJointControlKeeper.h"

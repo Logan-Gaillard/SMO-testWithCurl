@@ -6,10 +6,10 @@
 #pragma once
 
 #include "al/LiveActor/LiveActor.h"
-#include "game/Interfaces/IUsePlayerHack.h"
-#include "game/Player/PlayerInput.h"
-#include "game/Player/HackCap.h"
-#include "game/Player/PlayerCollider.h"
+#include "../Interfaces/IUsePlayerHack.h"
+#include "PlayerInput.h"
+#include "HackCap.h"
+#include "PlayerCollider.h"
 #include "game/Player/HackCap/CapTargetInfo.h"
 
 struct HackEndParam;

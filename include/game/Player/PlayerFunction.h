@@ -2,8 +2,8 @@
 
 #include "al/LiveActor/LiveActor.h"
 
-#include "game/Player/PlayerJointControlPartsDynamics.h"
-#include "game/Player/PlayerConst.h"
+#include "PlayerJointControlPartsDynamics.h"
+#include "PlayerConst.h"
 
 #include "PlayerCostumeInfo.h"
 

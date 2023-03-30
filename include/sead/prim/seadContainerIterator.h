@@ -6,7 +6,7 @@
 #include <iterator>
 #include <type_traits>
 #include <utility>
-#include "basis/seadTypes.h"
+#include "../basis/seadTypes.h"
 
 namespace sead
 {

@@ -1,10 +1,10 @@
 #pragma once
 
-#include <basis/seadTypes.h>
+#include "../basis/seadTypes.h"
 #include <cmath>
 #include <limits>
-#include <math/seadMathPolicies.h>
-#include <math/seadVector.h>
+#include "seadMathPolicies.h"
+#include "seadVector.h"
 
 namespace sead
 {
@@ -80,5 +80,5 @@ const Quatf Quatf::unit;
 }  // namespace sead
 
 #define SEAD_MATH_QUAT_H_
-#include <math/seadQuat.hpp>
+#include "seadQuat.hpp"
 #undef SEAD_MATH_QUAT_H_

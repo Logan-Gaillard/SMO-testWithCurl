@@ -1,6 +1,6 @@
 #pragma once
 
-#include "filedevice/nin/seadNinFileDeviceBaseNin.h"
+#include "seadNinFileDeviceBaseNin.h"
 
 namespace sead
 {

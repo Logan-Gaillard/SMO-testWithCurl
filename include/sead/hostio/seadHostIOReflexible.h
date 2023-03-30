@@ -1,8 +1,8 @@
 #pragma once
 
-#include "hostio/seadHostIOEventListener.h"
-#include "prim/seadBitFlag.h"
-#include "prim/seadSafeString.h"
+#include "seadHostIOEventListener.h"
+#include "../prim/seadBitFlag.h"
+#include "../prim/seadSafeString.h"
 
 namespace sead
 {

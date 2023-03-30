@@ -1,10 +1,10 @@
 #pragma once
 
 #include <algorithm>
-#include "basis/seadNew.h"
-#include "basis/seadRawPrint.h"
-#include "container/seadFreeList.h"
-#include "container/seadPtrArray.h"
+#include "../basis/seadNew.h"
+#include "../basis/seadRawPrint.h"
+#include "seadFreeList.h"
+#include "seadPtrArray.h"
 
 namespace sead
 {

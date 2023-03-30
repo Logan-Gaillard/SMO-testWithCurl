@@ -1,9 +1,9 @@
 #ifndef SEAD_PRIMITIVE_RENDERER_UTIL_H_
 #define SEAD_PRIMITIVE_RENDERER_UTIL_H_
 
-#include <basis/seadTypes.h>
-#include <gfx/seadColor.h>
-#include <math/seadVector.h>
+#include "../basis/seadTypes.h"
+#include "seadColor.h"
+#include "../math/seadVector.h"
 
 namespace sead
 {

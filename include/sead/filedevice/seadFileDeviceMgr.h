@@ -5,12 +5,12 @@
 #include <cafe.h>
 #endif  // cafe
 
-#include <basis/seadTypes.h>
-#include <container/seadTList.h>
-#include <filedevice/seadFileDevice.h>
-#include <filedevice/seadMainFileDevice.h>
-#include <heap/seadDisposer.h>
-#include <prim/seadSafeString.h>
+#include "../basis/seadTypes.h"
+#include "../container/seadTList.h"
+#include "seadFileDevice.h"
+#include "seadMainFileDevice.h"
+#include "../heap/seadDisposer.h"
+#include "../prim/seadSafeString.h"
 
 namespace sead
 {

@@ -2,7 +2,7 @@
 
 #include <cstdarg>
 
-#include <basis/seadTypes.h>
+#include "seadTypes.h"
 
 #ifdef SEAD_DEBUG
 #define SEAD_ASSERT_MSG(condition, message, ...)                                                   \

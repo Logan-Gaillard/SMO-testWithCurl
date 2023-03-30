@@ -2,8 +2,8 @@
 
 #include <new>
 
-#include "basis/seadRawPrint.h"
-#include "basis/seadTypes.h"
+#include "../basis/seadRawPrint.h"
+#include "../basis/seadTypes.h"
 
 namespace sead
 {

@@ -1,7 +1,7 @@
 #ifndef SEAD_MEM_UTIL_H_
 #define SEAD_MEM_UTIL_H_
 
-#include <basis/seadTypes.h>
+#include "../basis/seadTypes.h"
 
 namespace sead
 {
@@ -27,9 +27,9 @@ public:
 
 #define SEAD_PRIM_MEM_UTIL_H_
 #ifdef cafe
-#include <prim/cafe/seadMemUtilCafe.hpp>
+#include "cafe/seadMemUtilCafe.hpp"
 #elif NNSDK
-#include <prim/nin/seadMemUtilNin.hpp>
+#include "nin/seadMemUtilNin.hpp"
 #else
 #error "Unknown platform"
 #endif  // cafe

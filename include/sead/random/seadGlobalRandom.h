@@ -1,7 +1,7 @@
 #pragma once
 
-#include "heap/seadDisposer.h"
-#include "random/seadRandom.h"
+#include "../heap/seadDisposer.h"
+#include "seadRandom.h"
 
 namespace sead
 {

@@ -2,9 +2,9 @@
 
 #include <nn/os.h>
 
-#include <basis/seadTypes.h>
-#include <prim/seadBitFlag.h>
-#include <prim/seadEnum.h>
+#include "../basis/seadTypes.h"
+#include "../prim/seadBitFlag.h"
+#include "../prim/seadEnum.h"
 
 namespace sead
 {

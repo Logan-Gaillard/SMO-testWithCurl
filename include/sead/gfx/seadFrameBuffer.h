@@ -1,9 +1,9 @@
 #pragma once
 
-#include "gfx/seadColor.h"
-#include "math/seadBoundBox.h"
-#include "math/seadVector.h"
-#include "prim/seadRuntimeTypeInfo.h"
+#include "seadColor.h"
+#include "../math/seadBoundBox.h"
+#include "../math/seadVector.h"
+#include "../prim/seadRuntimeTypeInfo.h"
 
 namespace sead
 {

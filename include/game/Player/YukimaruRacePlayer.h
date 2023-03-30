@@ -1,6 +1,6 @@
 #pragma once
 
-#include "game/Interfaces/IUseDimension.h"
+#include "../Interfaces/IUseDimension.h"
 #include "PlayerActorBase.h"
 #include "PlayerPuppet.h"
 #include "PlayerInput.h"

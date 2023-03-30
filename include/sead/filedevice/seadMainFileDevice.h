@@ -1,10 +1,10 @@
 #ifndef SEAD_MAIN_FILEDEVICE_H_
 #define SEAD_MAIN_FILEDEVICE_H_
 
-#include <basis/seadTypes.h>
-#include <filedevice/seadFileDevice.h>
-#include <prim/seadRuntimeTypeInfo.h>
-#include <prim/seadSafeString.h>
+#include "../basis/seadTypes.h"
+#include "seadFileDevice.h"
+#include "../prim/seadRuntimeTypeInfo.h"
+#include "../prim/seadSafeString.h"
 
 namespace sead
 {

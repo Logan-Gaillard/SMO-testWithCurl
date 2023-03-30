@@ -1,8 +1,8 @@
 #pragma once
 
-#include "basis/seadTypes.h"
-#include "time/seadCalendarTime.h"
-#include "time/seadDateSpan.h"
+#include "../basis/seadTypes.h"
+#include "seadCalendarTime.h"
+#include "seadDateSpan.h"
 
 namespace sead
 {

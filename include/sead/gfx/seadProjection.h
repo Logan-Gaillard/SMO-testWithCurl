@@ -1,11 +1,11 @@
 #ifndef SEAD_PROJECTION_H_
 #define SEAD_PROJECTION_H_
 
-#include <basis/seadTypes.h>
-#include <gfx/seadGraphics.h>
-#include <math/seadMatrix.h>
-#include <math/seadVector.h>
-#include <prim/seadRuntimeTypeInfo.h>
+#include "../basis/seadTypes.h"
+#include "seadGraphics.h"
+#include "../math/seadMatrix.h"
+#include "../math/seadVector.h"
+#include "../prim/seadRuntimeTypeInfo.h"
 
 namespace sead
 {

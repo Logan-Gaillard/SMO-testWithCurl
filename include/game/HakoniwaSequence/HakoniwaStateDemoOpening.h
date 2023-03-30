@@ -1,7 +1,7 @@
 #pragma once
 
 class HakoniwaSequence;
-#include "game/WorldList/WorldResourceLoader.h"
+#include "../WorldList/WorldResourceLoader.h"
 
 class HakoniwaStateDemoOpening {
     public:

@@ -1,15 +1,15 @@
 #pragma once
 
 #include <array>
-#include "container/seadBuffer.h"
-#include "framework/seadInfLoopChecker.h"
-#include "heap/seadDisposer.h"
-#include "hostio/seadHostIONode.h"
-#include "mc/seadCoreInfo.h"
-#include "mc/seadJobQueue.h"
-#include "mc/seadWorker.h"
-#include "time/seadTickSpan.h"
-#include "time/seadTickTime.h"
+#include "../container/seadBuffer.h"
+#include "../framework/seadInfLoopChecker.h"
+#include "../heap/seadDisposer.h"
+#include "../hostio/seadHostIONode.h"
+#include "seadCoreInfo.h"
+#include "seadJobQueue.h"
+#include "seadWorker.h"
+#include "../time/seadTickSpan.h"
+#include "../time/seadTickTime.h"
 
 namespace sead
 {

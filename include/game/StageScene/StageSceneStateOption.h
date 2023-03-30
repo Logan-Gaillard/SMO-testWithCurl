@@ -8,8 +8,8 @@
 #include "al/LiveActor/LiveActor.h"
 #include "al/util/GraphicsUtil.h"
 #include "al/util/NerveUtil.h"
-#include "game/Input/InputSeparator.h"
-#include "game/Layouts/SimpleLayoutMenu.h"
+#include "../Input/InputSeparator.h"
+#include "../Layouts/SimpleLayoutMenu.h"
 
 struct CommonVerticalList;
 

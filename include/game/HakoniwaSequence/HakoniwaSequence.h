@@ -10,9 +10,9 @@
 #include "al/sequence/SequenceInitInfo.h"
 #include "al/gamepad/util.h"
 
-#include "game/StageScene/StageScene.h"
-#include "game/WorldList/WorldResourceLoader.h"
-#include "game/GameData/GameDataHolderAccessor.h"
+#include "../StageScene/StageScene.h"
+#include "../WorldList/WorldResourceLoader.h"
+#include "../GameData/GameDataHolderAccessor.h"
 
 #include "HakoniwaStateDeleteScene.h"
 #include "HakoniwaStateDemoOpening.h"

@@ -5,12 +5,12 @@
  * Vtable loc: 1D77980
  */
 
-#include <math/seadMatrix.h>
+#include "sead/math/seadMatrix.h"
 #include "PlayerHackKeeper.h"
 #include "al/LiveActor/LiveActor.h"
-#include "game/Interfaces/IUsePlayerHack.h"
-#include "game/Player/PlayerInitInfo.h"
-#include "game/Player/IUsePlayerPuppet.h"
+#include "../Interfaces/IUsePlayerHack.h"
+#include "PlayerInitInfo.h"
+#include "IUsePlayerPuppet.h"
 
 class PlayerActorBase : public al::LiveActor, public IUsePlayerHack {
 public:

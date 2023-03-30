@@ -4,8 +4,8 @@
 #include <nn/os.h>
 #endif
 
-#include <basis/seadTypes.h>
-#include <time/seadTickSpan.h>
+#include "../basis/seadTypes.h"
+#include "seadTickSpan.h"
 
 namespace sead
 {

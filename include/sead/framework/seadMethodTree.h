@@ -1,13 +1,13 @@
 #ifndef SEAD_METHODTREE_H_
 #define SEAD_METHODTREE_H_
 
-#include <container/seadTreeNode.h>
-#include <heap/seadDisposer.h>
-#include <prim/seadBitFlag.h>
-#include <prim/seadDelegate.h>
-#include <prim/seadNamable.h>
-#include <prim/seadRuntimeTypeInfo.h>
-#include <prim/seadStorageFor.h>
+#include "../container/seadTreeNode.h"
+#include "../heap/seadDisposer.h"
+#include "../prim/seadBitFlag.h"
+#include "../prim/seadDelegate.h"
+#include "../prim/seadNamable.h"
+#include "../prim/seadRuntimeTypeInfo.h"
+#include "../prim/seadStorageFor.h"
 
 namespace sead
 {

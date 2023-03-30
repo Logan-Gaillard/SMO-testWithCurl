@@ -1,7 +1,7 @@
 #pragma once
 
-#include "basis/seadTypes.h"
-#include "prim/seadRuntimeTypeInfo.h"
+#include "../basis/seadTypes.h"
+#include "../prim/seadRuntimeTypeInfo.h"
 
 namespace sead
 {

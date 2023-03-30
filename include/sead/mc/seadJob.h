@@ -1,7 +1,7 @@
 #pragma once
 
-#include "prim/seadDelegate.h"
-#include "prim/seadNamable.h"
+#include "../prim/seadDelegate.h"
+#include "../prim/seadNamable.h"
 
 namespace sead
 {

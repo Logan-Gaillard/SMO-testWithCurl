@@ -1,7 +1,7 @@
 #pragma once
 
-#include "prim/seadDelegate.h"
-#include "prim/seadDelegateEventSlot.h"
+#include "../prim/seadDelegate.h"
+#include "../prim/seadDelegateEventSlot.h"
 
 namespace sead
 {

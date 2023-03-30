@@ -2,9 +2,9 @@
 
 #include <array>
 
-#include <basis/seadRawPrint.h>
-#include <basis/seadTypes.h>
-#include <math/seadMathCalcCommon.h>
+#include "../basis/seadRawPrint.h"
+#include "../basis/seadTypes.h"
+#include "../math/seadMathCalcCommon.h"
 
 namespace sead
 {

@@ -2,10 +2,10 @@
 
 #include <type_traits>
 
-#include "basis/seadTypes.h"
-#include "heap/seadDisposer.h"
+#include "../basis/seadTypes.h"
+#include "../heap/seadDisposer.h"
 #ifdef SEAD_DEBUG
-#include "prim/seadStorageFor.h"
+#include "../prim/seadStorageFor.h"
 #endif
 
 namespace sead

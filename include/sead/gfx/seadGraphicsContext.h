@@ -1,9 +1,9 @@
 #ifndef SEAD_GRAPHICS_CONTEXT_H_
 #define SEAD_GRAPHICS_CONTEXT_H_
 
-#include <gfx/seadColor.h>
-#include <gfx/seadGraphics.h>
-#include <gfx/seadDrawContext.h>
+#include "seadColor.h"
+#include "seadGraphics.h"
+#include "seadDrawContext.h"
 
 namespace sead {
 

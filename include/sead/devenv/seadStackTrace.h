@@ -1,7 +1,7 @@
 #pragma once
 
-#include "basis/seadTypes.h"
-#include "container/seadSafeArray.h"
+#include "../basis/seadTypes.h"
+#include "../container/seadSafeArray.h"
 
 namespace sead
 {

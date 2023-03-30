@@ -9,7 +9,7 @@
 #include "GameDataHolderAccessor.h"
 #include "GameDataHolderWriter.h"
 #include "al/area/ChangeStageInfo.h"
-#include "game/GameData/GameDataFile.h"
+#include "GameDataFile.h"
 
 class GameDataFunction
 {

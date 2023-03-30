@@ -23,7 +23,7 @@
 #include <type_traits>
 #include <utility>
 
-#include <basis/seadNew.h>
+#include "../basis/seadNew.h"
 
 namespace sead
 {

@@ -1,10 +1,10 @@
 #ifndef SEAD_DISPOSER_H_
 #define SEAD_DISPOSER_H_
 
-#include <basis/seadNew.h>
-#include <basis/seadRawPrint.h>
-#include <basis/seadTypes.h>
-#include <container/seadListImpl.h>
+#include "../basis/seadNew.h"
+#include "../basis/seadRawPrint.h"
+#include "../basis/seadTypes.h"
+#include "../container/seadListImpl.h"
 
 namespace sead
 {

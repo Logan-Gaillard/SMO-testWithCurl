@@ -1,7 +1,7 @@
 #pragma once
 
-#include <gfx/seadColor.h>
-#include <math/seadBoundBox.h>
+#include "seadColor.h"
+#include "../math/seadBoundBox.h"
 
 namespace sead
 {

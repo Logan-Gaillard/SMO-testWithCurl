@@ -6,6 +6,5 @@ deploy/*
 *.elf
 *.nso
 *.npdm
-# Project exclude paths
-/cmake-build-debug/
-/CMakeFiles/
+
+compile_commands.json

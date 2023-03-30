@@ -4,8 +4,8 @@
 #include <nn/os.h>
 #endif
 
-#include "heap/seadDisposer.h"
-#include "time/seadTickSpan.h"
+#include "../heap/seadDisposer.h"
+#include "../time/seadTickSpan.h"
 
 namespace sead
 {

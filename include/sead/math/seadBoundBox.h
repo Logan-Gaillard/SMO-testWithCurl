@@ -1,6 +1,6 @@
 #pragma once
 
-#include <math/seadVector.h>
+#include "seadVector.h"
 
 namespace sead
 {
@@ -105,5 +105,5 @@ typedef BoundBox3<f32> BoundBox3f;
 }  // namespace sead
 
 #define SEAD_MATH_BOUND_BOX_H_
-#include <math/seadBoundBox.hpp>
+#include "seadBoundBox.hpp"
 #undef SEAD_MATH_BOUND_BOX_H_

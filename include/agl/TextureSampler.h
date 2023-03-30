@@ -1,6 +1,6 @@
 #pragma once
 
-#include "agl/util.h"
+#include "util.h"
 #include "detail/Surface.h"
 #include "driver/NVNtexture.h"
 #include <prim/seadSafeString.h>

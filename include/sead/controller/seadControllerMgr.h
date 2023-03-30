@@ -1,11 +1,11 @@
 #pragma once
 
-#include "container/seadOffsetList.h"
-#include "container/seadPtrArray.h"
-#include "controller/seadController.h"
-#include "framework/seadCalculateTask.h"
-#include "framework/seadTaskMgr.h"
-#include "heap/seadDisposer.h"
+#include "../container/seadOffsetList.h"
+#include "../container/seadPtrArray.h"
+#include "seadController.h"
+#include "../framework/seadCalculateTask.h"
+#include "../framework/seadTaskMgr.h"
+#include "../heap/seadDisposer.h"
 
 namespace sead
 {

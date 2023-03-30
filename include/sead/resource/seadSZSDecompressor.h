@@ -1,10 +1,10 @@
 #ifndef SEAD_SZS_DECOMPRESSOR_H_
 #define SEAD_SZS_DECOMPRESSOR_H_
 
-#include <basis/seadTypes.h>
-#include <resource/seadDecompressor.h>
-#include <resource/seadResource.h>
-#include <resource/seadResourceMgr.h>
+#include "../basis/seadTypes.h"
+#include "seadDecompressor.h"
+#include "seadResource.h"
+#include "seadResourceMgr.h"
 
 namespace sead
 {

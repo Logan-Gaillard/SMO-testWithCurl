@@ -1,7 +1,7 @@
 #pragma once
 
-#include "container/seadTreeNode.h"
-#include "hostio/seadHostIOReflexible.h"
+#include "../container/seadTreeNode.h"
+#include "seadHostIOReflexible.h"
 
 namespace sead::hostio
 {

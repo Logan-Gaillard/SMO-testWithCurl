@@ -1,8 +1,8 @@
 #pragma once
 
 #include "al/scene/Scene.h"
-#include "game/StageScene/StageSceneLayout.h"
-#include "game/StageScene/StageSceneStatePauseMenu.h"
+#include "StageSceneLayout.h"
+#include "StageSceneStatePauseMenu.h"
 
 #define INHERITSIZE sizeof(al::Scene)
 
