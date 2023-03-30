@@ -42,7 +42,7 @@ CFLAGS	:=	-g -Wall -O3 \
 			$(ARCH) \
 			$(DEFINES)
 
-CFLAGS	+=	$(INCLUDE) -D__SWITCH__ -D__RTLD_6XX__ -DNNSDK
+CFLAGS	+=	$(INCLUDE) -D__SWITCH__ -D__RTLD_6XX__ -DNNSDK -DLOGGER_IP=$(LOGGER_IP)
 
 CFLAGS	+= $(EXL_CFLAGS) -I"$(DEVKITPRO)/libnx/include" -I$(ROOT_SOURCE) $(addprefix -I,$(MODULES))
 

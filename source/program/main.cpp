@@ -3,7 +3,6 @@
 #include "logger/Logger.hpp"
 
 #include "sead/basis/seadRawPrint.h"
-#include "sead/prim/seadSafeString.h"
 #include "sead/resource/seadResourceMgr.h"
 #include "sead/heap/seadHeapMgr.h"
 #include "sead/devenv/seadDebugFontMgrNvn.h"
@@ -19,8 +18,6 @@
 #include "al/actor/LiveActorFlag.h"
 #include "rs/util.hpp"
 
-#include "al/util/SensorUtil.h"
-#include "game/Player/PlayerJointControlSwimPose.h"
 #include "sead/gfx/seadPrimitiveRenderer.h"
 
 static const char *DBG_FONT_PATH = "DebugData/Font/nvn_font_jis1.ntx";

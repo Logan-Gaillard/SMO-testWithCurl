@@ -3,6 +3,8 @@
 # Common settings
 #------------------------
 
+LOGGER_IP := \"127.0.0.1\"
+
 # How you're loading your module. Used to determine how to find the target module. (AsRtld/Module/Kip)
 LOAD_KIND := Module
 
