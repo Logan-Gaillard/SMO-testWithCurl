@@ -37,11 +37,10 @@ public:
     void initPlayer(al::ActorInitInfo const&, PlayerInitInfo const&);
     void exeDemo();
 
-    unsigned char padding[0x18]; // 0x108
     PlayerInfo *mPlayerInfo; // 0x128
     PlayerConst *mPlayerConst; // 0x130
     PlayerInput *mPlayerInput; //0x138
-    unsigned char padding_148[0x8]; // PlayerTrigger
+    PlayerTrigger *playerTrigger; // 0x140
     HackCap *mHackCap; // 0x148
     ActorDimensionKeeper *mDimKeeper; // 0x150
     PlayerModelKeeper *mPlayerModelKeeper; // 0x158
@@ -52,7 +51,8 @@ public:
     // 0x180 PlayerAreaChecker
     // 0x188 WaterSurfaceFinder
     // 0x190 unk
-    // 0x198 unk
+    unsigned char padding_198[0x198 - 0x180];
+    PlayerDamageKeeper *damageKeeper; // 0x198
     // 0x1A0 unk
     // 0x1A8 unk
     // 0x1B0 unk
@@ -60,12 +60,13 @@ public:
     // 0x1C0 unk
     // 0x1C8 unk
     // 0x1D0 unk
-    // 0x1D8 unk
+    unsigned char padding_1D8[0x1D8 - 0x1A0];
+    PlayerCounterIceWater *playerCounterIceWater; // 0x1D8
     // 0x1E0 unk
     // 0x1E8 unk
     // 0x1F0 unk
     // 0x1F8 PlayerBindKeeper
-    unsigned char padding_208[0x208 - 0x180];
+    unsigned char padding_208[0x208 - 0x1E0];
     PlayerHackKeeper *mHackKeeper; // 0x208
     PlayerFormSensorCollisionArranger *mCollArranger; // 0x210
     void *unkPtr2; // 0x218
