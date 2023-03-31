@@ -27,6 +27,8 @@
 
 #define PACTORSIZE 0xC8
 
+class PlayerJudgeDeadWipeStart;
+
 class PlayerActorHakoniwa : public PlayerActorBase, public IUseDimension {
 public:
     int getPortNo(void) const override;
@@ -72,5 +74,6 @@ public:
     void *unkPtr2; // 0x218
     void *unkPtr3; // 0x220
     PlayerSpinCapAttack *mSpinCapAttack; // 0x228
-        
+    unsigned char padding_3D8[0x3D8 - 0x230];
+    PlayerJudgeDeadWipeStart *playerJudgeDeadWipeStart;
 };

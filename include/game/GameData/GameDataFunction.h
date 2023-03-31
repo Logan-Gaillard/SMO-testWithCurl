@@ -138,4 +138,9 @@ public:
     // subtracts the supplied int value from the current coin count
     static void subCoin(GameDataHolderWriter, int value);
 
+    static unsigned int getPlayerHitPoint(GameDataHolderAccessor);
+
+    static unsigned int getPlayerHitPointMaxNormal(GameDataHolderAccessor);
+
+    static bool isPlayerHitPointMaxWithItem(GameDataHolderAccessor);
 };
