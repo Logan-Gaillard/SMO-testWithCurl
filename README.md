@@ -1,5 +1,5 @@
 # exlaunch
-A framework for injecting C/C++ code into Nintendo Switch applications/applet/sysmodules.
+A framework for injecting C/C++ code into Nintendo Switch applications/applet/sysmodules. This repo adds smo headers and exlaunch configuration to create mods for smo.
 
 # Credits
 - Atmosphère: A great reference and guide.
