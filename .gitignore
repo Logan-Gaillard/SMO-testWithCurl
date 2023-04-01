@@ -8,3 +8,5 @@ deploy/*
 *.npdm
 
 compile_commands.json
+cmake-build*/
+.idea/
