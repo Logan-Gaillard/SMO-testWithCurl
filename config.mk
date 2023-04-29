@@ -36,7 +36,7 @@ MOUNT_PATH := /mnt/k
 # Settings for deploying over FTP. Used by the deploy-ftp.py script.
 FTP_IP := 192.168.178.104
 FTP_PORT := 5000
-FTP_USERNAME :=
+FTP_USERNAME := cookieso
 FTP_PASSWORD :=
 
 # Settings for deploying to Ryu. Used by the deploy-ryu.sh script.
