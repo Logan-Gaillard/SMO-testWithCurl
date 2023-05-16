@@ -84,14 +84,19 @@ HOOK_DEFINE_TRAMPOLINE(DrawDebugMenu) {
 extern "C" void exl_main(void *x0, void *x1) {
     /* Setup hooking enviroment. */
     exl::hook::Initialize();
-
-#ifdef EXL_DEBUG
-    R_ABORT_UNLESS(Logger::instance().init(LOGGER_IP, 3080).value)
+#ifdef SMO_DEBUG
+    const u16 PORT = 3080;
+#ifdef ABORT_IF_NO_SERVER
+    R_ABORT_UNLESS(Logger::instance().init(LOGGER_IP, PORT).value)
+#else
+    Logger::instance().init(LOGGER_IP, PORT)
+#endif
     GameSystemInit::InstallAtOffset(0x535850);
     // Debug Text Writer Drawing
     DrawDebugMenu::InstallAtOffset(0x50F1D8);
-#endif
 
+    runDebugCodePatches();
+#endif
     runCodePatches();
 
     // Sead Debugging Overriding

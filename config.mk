@@ -1,43 +1,15 @@
 #----------------------------- User configuration -----------------------------
 
-# Common settings
-#------------------------
-
-LOGGER_IP := \"127.0.0.1\"
-
-# How you're loading your module. Used to determine how to find the target module. (AsRtld/Module/Kip)
-LOAD_KIND := Module
-
-# Program you're targetting. Used to determine where to deploy your files.
-PROGRAM_ID := 0100000000010000
-
-# Optional path to copy the final ELF to, for convenience.
-ELF_EXTRACT :=
-
-# Python command to use. Must be Python 3.4+.
-PYTHON := python3
-
-# JSON to use to make .npdm
-NPDM_JSON := qlaunch.json
-
-# Additional C/C++ flags to use.
-C_FLAGS := 
-CXX_FLAGS := 
-
-# AsRtld settings
-#------------------------
-
-# Path to the SD card. Used to mount and deploy files on SD, likely with hekate UMS.
-MOUNT_PATH := /mnt/k
-
-# Module settings
-#------------------------
+LOGGER_IP := 127.0.0.1
+# Crash the game if the logging server wasn't found
+ABORT_IF_NO_SERVER := 1
+# Enable logging and drawing the debug menu
+SMO_DEBUG := 1
 
 # Settings for deploying over FTP. Used by the deploy-ftp.py script.
 FTP_IP := 192.168.178.104
-FTP_PORT := 5000
 FTP_USERNAME := cookieso
-FTP_PASSWORD :=
+FTP_PASSWORD := 0
 
 # Settings for deploying to Ryu. Used by the deploy-ryu.sh script.
-RYU_PATH := /home/cookieso/.var/app/org.ryujinx.Ryujinx/config/Ryujinx/
+RYU_PATH := /home/cookieso/.var/app/org.ryujinx.Ryujinx/config/Ryujinx

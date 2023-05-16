@@ -11,9 +11,16 @@ set(CMAKE_CXX_STANDARD 23)
 if (LOGGER_IP)
     add_compile_definitions(LOGGER_IP="${LOGGER_IP}")
 endif ()
+if (ABORT_IF_NO_SERVER)
+    add_compile_definitions(ABORT_IF_NO_SERVER="${ABORT_IF_NO_SERVER}")
+endif ()
+if (SMO_DEBUG)
+    add_compile_definitions(SMO_DEBUG="${SMO_DEBUG}")
+endif ()
 
 ## Title Id
-set(CONFIG_TITLE_ID 0x0100000000010000 CACHE INTERNAL "")
+set(TARGET_TITLE_ID 0100000000010000)
+set(CONFIG_TITLE_ID 0x${TARGET_TITLE_ID} CACHE INTERNAL "")
 add_compile_definitions(EXL_PROGRAM_ID=${CONFIG_TITLE_ID} NNSDK=1)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.json ${CMAKE_CURRENT_BINARY_DIR}/subsdk9.json)
 
@@ -55,28 +62,26 @@ set_target_properties(subsdk9 PROPERTIES CONFIG_JSON "${CMAKE_CURRENT_BINARY_DIR
 __generate_npdm(subsdk9)
 set_target_properties(subsdk9 PROPERTIES LINK_FLAGS "-specs ${CMAKE_BINARY_DIR}/subsdk9.specs -g3 ${ARCH} -nostartfiles")
 
-file(GLOB SUBSDKs "${CMAKE_CURRENT_BINARY_DIR}/subsdk[0-9]")
-string(REGEX REPLACE "^0x" "" TARGET_TITLE_ID ${CONFIG_TITLE_ID})
+add_custom_target(subsdk_npdm DEPENDS subsdk9_nso create_npdm)
+
+file(GLOB SUBSDKS "${CMAKE_CURRENT_BINARY_DIR}/subsdk[0-9]")
 if (FTP_IP)
     install(
             CODE
-            "execute_process(COMMAND \"ncftpput -u ${FTP_USER} -p ${FTP_PASS} -P 5000 ${FTP_IP} /atmosphere/contents/${TARGET_TITLE_ID}/exefs ${CMAKE_BINARY_DIR}/main.npdm ${SUBSDKS}\")"
+            "execute_process(COMMAND ncftpput -u ${FTP_USER} -p ${FTP_PASS} -P 5000 ${FTP_IP} /atmosphere/contents/${TARGET_TITLE_ID}/exefs ${CMAKE_BINARY_DIR}/main.npdm ${SUBSDKS} COMMAND_ECHO STDOUT RESULT_VARIABLE res)
+            message(\"\${res}\")"
             COMPONENT FTPUpload
     )
-    ## Upload to target switch
-    #    add_custom_command(TARGET deploy_ftp POST_BUILD COMMAND ncftpput -u ${FTP_USER} -p ${FTP_PASS} -P 5000 ${FTP_IP} /atmosphere/contents/${TITLE_ID}/exefs ${CMAKE_BINARY_DIR}/main.npdm ${SUBSDKS})
 endif ()
-
-if (RYU_PATH)
+if (IS_DIRECTORY ${RYU_PATH})
     install(DIRECTORY DESTINATION ${RYU_PATH}/mods/contents/${TARGET_TITLE_ID}/mods COMPONENT RYUJINX)
     install(
             CODE
             "file(GLOB SUBSDKS ${CMAKE_CURRENT_BINARY_DIR}/subsdk[0-9])
-            message(\${SUBSDKS})
             foreach(SUBSDK \${SUBSDKS})
-                file(COPY \${SUBSDK} DESTINATION ${RYU_PATH}/mods/contents/${TARGET_TITLE_ID}/mods/)
+                file(COPY \${SUBSDK} DESTINATION ${RYU_PATH}/mods/contents/${TARGET_TITLE_ID}/mods/exefs)
             endforeach()
-            file(COPY ${CMAKE_CURRENT_BINARY_DIR}/main.npdm DESTINATION ${RYU_PATH}/mods/contents/${TARGET_TITLE_ID}/mods/)"
+            file(COPY ${CMAKE_CURRENT_BINARY_DIR}/main.npdm DESTINATION ${RYU_PATH}/mods/contents/${TARGET_TITLE_ID}/mods/exefs)"
             COMPONENT RYUJINX
     )
 endif ()

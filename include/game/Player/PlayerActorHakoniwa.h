@@ -22,12 +22,14 @@
 #include "PlayerModelChangerHakoniwa.h"
 #include "PlayerFormSensorCollisionArranger.h"
 #include "PlayerInitInfo.h"
+#include "al/util/NerveUtil.h"
 
 #include "Attacks/PlayerSpinCapAttack.h"
 
 #define PACTORSIZE 0xC8
 
 class PlayerJudgeDeadWipeStart;
+class PlayerJudgePreInputJump;
 
 class PlayerActorHakoniwa : public PlayerActorBase, public IUseDimension {
 public:
@@ -38,6 +40,7 @@ public:
     void startPlayerPuppet(void);
     void initPlayer(al::ActorInitInfo const&, PlayerInitInfo const&);
     void exeDemo();
+    void exeJump();
 
     PlayerInfo *mPlayerInfo; // 0x128
     PlayerConst *mPlayerConst; // 0x130
@@ -76,4 +79,14 @@ public:
     PlayerSpinCapAttack *mSpinCapAttack; // 0x228
     unsigned char padding_3D8[0x3D8 - 0x230];
     PlayerJudgeDeadWipeStart *playerJudgeDeadWipeStart;
+    unsigned char padding_4a0[0x4a0-0x3e0];
+    PlayerJudgePreInputJump *mPlayerJudgePreInputJump;
 };
+
+namespace {
+    NERVE_HEADER(PlayerActorHakoniwa, Jump)
+}
+
+namespace {
+    NERVE_IMPL(PlayerActorHakoniwa, Jump)
+}

@@ -9,6 +9,10 @@ void stubSocketInit() {
     p.WriteInst(inst::Nop());
 }
 
-void runCodePatches() {
+void runDebugCodePatches() {
     stubSocketInit();
+}
+
+void runCodePatches() {
+
 }
