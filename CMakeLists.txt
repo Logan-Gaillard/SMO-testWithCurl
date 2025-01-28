@@ -11,13 +11,6 @@ set(CMAKE_CXX_STANDARD 23)
 if (LOGGER_IP)
     add_compile_definitions(LOGGER_IP="${LOGGER_IP}")
 endif ()
-if (ABORT_IF_NO_SERVER)
-    add_compile_definitions(ABORT_IF_NO_SERVER="${ABORT_IF_NO_SERVER}")
-endif ()
-if (SMO_DEBUG)
-    add_compile_definitions(SMO_DEBUG="${SMO_DEBUG}")
-endif ()
-
 ## Title Id
 set(TARGET_TITLE_ID 0100000000010000)
 set(CONFIG_TITLE_ID 0x${TARGET_TITLE_ID} CACHE INTERNAL "")
@@ -65,23 +58,7 @@ set_target_properties(subsdk9 PROPERTIES LINK_FLAGS "-specs ${CMAKE_BINARY_DIR}/
 add_custom_target(subsdk_npdm DEPENDS subsdk9_nso create_npdm)
 
 file(GLOB SUBSDKS "${CMAKE_CURRENT_BINARY_DIR}/subsdk[0-9]")
+
 if (FTP_IP)
-    install(
-            CODE
-            "execute_process(COMMAND ncftpput -u ${FTP_USER} -p ${FTP_PASS} -P 5000 ${FTP_IP} /atmosphere/contents/${TARGET_TITLE_ID}/exefs ${CMAKE_BINARY_DIR}/main.npdm ${SUBSDKS} COMMAND_ECHO STDOUT RESULT_VARIABLE res)
-            message(\"\${res}\")"
-            COMPONENT FTPUpload
-    )
-endif ()
-if (IS_DIRECTORY ${RYU_PATH})
-    install(DIRECTORY DESTINATION ${RYU_PATH}/mods/contents/${TARGET_TITLE_ID}/mods COMPONENT RYUJINX)
-    install(
-            CODE
-            "file(GLOB SUBSDKS ${CMAKE_CURRENT_BINARY_DIR}/subsdk[0-9])
-            foreach(SUBSDK \${SUBSDKS})
-                file(COPY \${SUBSDK} DESTINATION ${RYU_PATH}/mods/contents/${TARGET_TITLE_ID}/mods/exefs)
-            endforeach()
-            file(COPY ${CMAKE_CURRENT_BINARY_DIR}/main.npdm DESTINATION ${RYU_PATH}/mods/contents/${TARGET_TITLE_ID}/mods/exefs)"
-            COMPONENT RYUJINX
-    )
+add_custom_command(TARGET subsdk_npdm POST_BUILD COMMAND ncftpput -u crafty -p boss -P 5000 ${FTP_IP} /atmosphere/contents/${TARGET_TITLE_ID}/exefs ${CMAKE_BINARY_DIR}/main.npdm ${CMAKE_BINARY_DIR}/subsdk9)
 endif ()

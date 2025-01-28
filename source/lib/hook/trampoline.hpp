@@ -1,6 +1,7 @@
 #pragma once
 
 #include "base.hpp"
+#include "ro.h"
 #include "util/func_ptrs.hpp"
 #include <functional>
 
@@ -51,6 +52,15 @@ namespace exl::hook::impl {
             _HOOK_STATIC_CALLBACK_ASSERT();
             
             OrigRef() = hook::Hook(ptr, Derived::Callback, true);
+        }
+
+        static ALWAYS_INLINE void InstallAtSymbol(const char *sym) {
+            _HOOK_STATIC_CALLBACK_ASSERT();
+
+            uintptr_t address = 0;
+            R_ABORT_UNLESS(nn::ro::LookupSymbol(&address, sym));
+
+            OrigRef() = hook::Hook(address, Derived::Callback, true);
         }
     };
 

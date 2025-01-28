@@ -7,6 +7,7 @@
 #include <sead/math/seadVector.h>
 #include <sead/math/seadMatrix.h>
 
+class GameDataHolder;
 class ChangeStageInfo {
     public:
         enum SubScenarioType : unsigned int {

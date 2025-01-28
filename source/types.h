@@ -57,3 +57,5 @@ typedef	unsigned long	ulong;
 #define PAGE_SIZE (0x1000)
 #define ALWAYS_INLINE inline __attribute__((always_inline))
 #define BITSIZEOF(x) (sizeof(x) * CHAR_BIT)
+
+typedef unsigned int socklen_t;

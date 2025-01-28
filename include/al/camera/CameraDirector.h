@@ -15,7 +15,7 @@ namespace al
             float getSceneFovyDegree(void) const;
 
             unsigned char padding[0x30-0x02];
-            float *sceneFovyDegree; // 0x30
+            float sceneFovyDegree; // 0x30
             void* padding2[4];
             CameraInputHolder* mCameraInputHolder;
             // 0xBC float farClipDistance

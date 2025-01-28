@@ -2,14 +2,13 @@
 include $(shell pwd)/config.mk
 
 all:
-	cmake -DABORT_IF_NO_SERVER=$(ABORT_IF_NO_SERVER) -DSMO_DEBUG=$(SMO_DEBUG) -DLOGGER_IP=$(LOGGER_IP) -DFTP_USER=$(FTP_USERNAME) \
-			-DFTP_IP=$(FTP_IP) -DFTP_PASS=$(FTP_PASSWORD) -DRYU_PATH=$(RYU_PATH) \
-			-DCMAKE_TOOLCHAIN_FILE=cmake/toolchain.cmake -S . -B build -G Ninja
-	cmake --build build --target subsdk_npdm -j 10
-	$(MAKE) deploy
+	cmake -DLOGGER_IP=$(LOGGER_IP) -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain.cmake -S . -B build -G Ninja
 
-deploy:
-	cmake --build build --target install -j 10
+send:
+	cmake --toolchain=cmake/toolchain.cmake -DFTP_IP=$(FTP_IP) -DLOGGER_IP=$(LOGGER_IP) -S . -B build && $(MAKE) -C build subsdk_npdm
+	
+clean:
+	rm -r build
 
-start_logging_server:
-	python misc/scripts/tcpServer.py
+log:
+	python3 misc/scripts/tcpServer.py

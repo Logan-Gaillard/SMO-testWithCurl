@@ -2,6 +2,4 @@
 
 #include "lib.hpp"
 
-void runDebugCodePatches();
-
 void runCodePatches(); 

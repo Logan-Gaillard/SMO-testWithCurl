@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Factory.h"
-#include "logger.hpp"
+#include "logger/Logger.hpp"
 
 namespace cc {
     template <class T>

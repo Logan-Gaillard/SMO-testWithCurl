@@ -29,8 +29,7 @@ namespace al
     struct EventFlowExecutor;
     struct ParabolicPath;
 
-    sead::Vector3f &getSensorPos(al::HitSensor const *);
-    float getSensorRadius(al::HitSensor const*);
+    sead::Vector3f *getSensorPos(al::HitSensor const *);
     sead::Vector3f* getActorTrans(al::HitSensor const*);
 
     void setSensorRadius(al::LiveActor *, const char *, float);

@@ -2,6 +2,7 @@
 
 #include "types.h"
 #include "al/util.hpp"
+#include "logger/Logger.hpp"
 
 namespace al
 {
