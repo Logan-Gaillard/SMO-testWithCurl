@@ -10,3 +10,4 @@ deploy/*
 compile_commands.json
 cmake-build*/
 .idea/
+.cache/*
